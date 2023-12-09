@@ -1,0 +1,148 @@
+*{
+  margin:0;
+  padding:0;
+  font-family:'poppins',sans-serif ;
+  box-sizing: border-box;
+  background-color: rgb(61, 39, 39);
+
+}
+.bgvideo{
+  width: 100%;
+  height: cover;
+  position:fixed;
+   opacity: 0.9;
+   
+}
+
+.form-box{ 
+  width:90%;
+  max-width:450px;
+  position: absolute;
+  top: 50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  background: #fff;
+  padding: 50px 60px 70px;
+  text-align:center;
+  color: black;
+  background: transparent;
+
+}
+.form-box h1{
+  font-size: 30px;
+  margin-bottom: 60px;
+  color:white;
+  position: relative;
+}
+.form-box h1::after{
+  content: '';
+  width:30px;
+  height:4px;
+  border-radius:3px;
+  background:white;
+  position: absolute;
+  bottom:-12px;
+  left:50%;
+  transform: translateX(-50%);
+
+}
+
+.input-field{
+  margin: 15px;
+  border-radius:3px;
+  display: flex;
+  align-items: center;
+  max-height: 65px;
+  overflow: hidden;
+  
+
+
+}
+input:hover{
+  background-color: black;
+}
+
+input{
+  width:100%;
+  background: transparent;
+  padding: 18px 15px;
+  color: #fff ;
+  border-radius: 50px;
+}
+.input-field i{
+  margin-left: 15px;
+  color: rgb(153,153,153);
+}
+.btn-field{
+  width:100%;
+  display:flex;
+  justify-content: space-between;
+}
+.btn-field button{
+  flex-basis:48%;
+  background: black;
+  color: rgb(255,255,255);
+  height:40px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background 1s;
+}
+#yt{
+  height: 100%;
+  width: 100%;
+}
+.socials{
+  position: absolute;
+  top: 99%;
+  left: 40%;
+  
+}
+#yd{
+  color:#4f5bd5;
+}
+
+#fb{
+  color: #4f5bd5;
+}
+.ssocials{    
+  position: absolute;
+  top: 99%;
+  left: 47%; 
+  margin-left: 15px;
+}
+.sssocials{
+  position: absolute;
+  top: 99%;
+  left: 49%;
+  margin-left: 50px;
+  padding-bottom: 50px;
+  
+}
+#in{
+  color:rgb(165, 109, 133)
+}
+#home{
+  flex-basis:48%;
+  background: black;
+  color: rgb(255,255,255);
+  height:40px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background 1s;
+  width:50%;
+  position: absolute;
+  bottom: 4%;
+  left:25%;
+  text-decoration: none;
+  
+}
+#home1
+{
+  text-decoration: none;
+  color: rgb(255,255,255);
+}
+
+
+
+ 
+

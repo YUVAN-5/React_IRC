@@ -1,14 +1,9 @@
 
-import './Assets/App.css'
-
-function App() {
-  return (
-    <div >
-       {/* <video autoplay loop muted plays-inline class="bgvideo">
-            <source src="video.mp4"/>
-        </video> */}
-        
-        <div class="container">
+import { Link } from "react-router-dom";
+function Login(){
+    return(
+        <>
+         <div class="container">
             <div class="form-box"> 
                 <h1 id="title">Sign Up</h1>
                 <form>
@@ -31,7 +26,7 @@ function App() {
                                 <br/>
                              <div class="btn-field">
                                 <button type="button" id="signupBtn" >Sign Up</button>
-                                <button type="button"id="signinBtn"class="disable" >Sign In</button>
+                                <button type="button"id="signinBtn"class="disable" ><Link to='/Signup'>Sign In</Link></button>
                              </div> 
                              
                              <button type="button"id="home"><a href="reacthome.html" id="home1">HOME</a></button>          
@@ -39,8 +34,9 @@ function App() {
                 
             </div>
         </div>
-    </div>
-  );
-}
 
-export default App;
+        
+        </>
+    )
+}
+export default Login;

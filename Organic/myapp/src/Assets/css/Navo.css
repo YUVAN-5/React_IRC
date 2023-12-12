@@ -1,0 +1,60 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-Items: 'center';
+    background: black;
+    text-decoration:none ;
+    height: 50px;
+    font-family:'Chiller';
+    color: antiquewhite;
+}
+.foot{
+   font-family: 'Chiller';
+   font-weight: 800;
+   font-size: larger;
+}
+.coll{
+    font-family: 'Chiller';
+    font-weight: 800;
+   font-size: larger;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    /* gap:2rem; */
+    
+}
+
+.logoname
+{
+    display: flex;
+    transform: translate(-700px,5px);
+    justify-content:space-between;
+    align-items: center;
+    color:antiquewhite;
+}
+.texts{
+    display: flex;
+    margin: 0;
+    align-items: center;
+    color:antiquewhite;
+    list-style: none;
+    text-decoration:none ;
+    gap: 3rem;
+
+}
+.texts li{
+    list-style: none;
+}
+.texts li::after{
+    content:'';
+    width:0%;
+    height:2px;
+    background: white;
+    display:block;
+    margin:auto;   
+    transition:0.5s;
+}
+.texts li:hover::after{
+    width: 100%;
+}

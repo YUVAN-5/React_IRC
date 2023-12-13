@@ -21,7 +21,7 @@
 
 .category h2 {
     margin: 0;
-    font-family: monospace;
+    font-family: 'Chiller';
     color: #333; /* Set the text color */
 }
 
@@ -39,7 +39,7 @@
 
 .text {
     color: #0a0a0a; 
-    font-family:monospace;
+    font-family:'Chiller';
     font-weight: 800;
     font-size: xx-large;
     

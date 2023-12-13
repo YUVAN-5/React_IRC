@@ -25,11 +25,11 @@ function Login(){
                                 </div>
                                 <br/>
                              <div class="btn-field">
-                                <button type="button" id="signupBtn" >Sign Up</button>
-                                <button type="button"id="signinBtn"class="disable" ><Link to='/Signup'>Sign In</Link></button>
+                                <Link to='/Signup'><button type="button"id="signinBtn"class="disable" >Sign In</button></Link>
+                                <Link to='reacthome.html'><button type="button" id="signupBtn" >Sign Up</button></Link>
                              </div> 
                              
-                             <button type="button"id="home"><a href="reacthome.html" id="home1">HOME</a></button>          
+                                {/* <Link to=''> <button type="button"id="home"><a href="reacthome.html" id="home1">HOME</a></button></Link>   */}
                 </form>
                 
             </div>

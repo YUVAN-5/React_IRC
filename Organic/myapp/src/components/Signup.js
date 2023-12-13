@@ -20,11 +20,11 @@ function Signup(){
                                  
                                 <br/>
                              <div class="btn-field">
-                                <button type="button" id="signupBtn" >Sign Up</button>
-                                <button type="button"id="signinBtn"class="disable" >SignIn</button>
-                             </div> 
+                                <Link to='/Login'><button type="button" id="signupBtn" className="disable">Sign Up</button></Link>
+                               <Link to='/reacthome.html'> <button type="button"id="signinBtn"className="disable" >SignIn</button></Link>
                              
-                             <button type="button"id="home"><a href="reacthome.html" id="home1">HOME</a></button>          
+                             </div> <br></br>
+                             {/* <button type="button"id="home" ><a href="reacthome.html" id="home1">HOME</a></button>           */}
                 </form>
                 
             </div>

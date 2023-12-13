@@ -7,16 +7,16 @@ function Jss(){
         <div className="foot"><marquee>Flat 60% Off!!Ends soon...Shop before u Worry!!..</marquee>
         </div><br/>
         <div className="navbar">
-        <div className='logo'>
+        {/* <div className='logo'>
             <img src={img2} style={{height:'80%',width:'10%'}}/>
-        </div>
-                {/* <h1 className='logoname'>TASTE'S FRESH</h1> */}
+        </div> */}
+                <h1 className='logoname'>Grab@Organic</h1>
 
             <div className='texts'>
-                <li><Link to ='/'>HOME</Link></li>
+               <li>HOME</li>
                 <li>CART</li>
-                <li><Link to ='/Login'>LOGIN</Link></li>
-                <li><Link to ='/Login'>PROFILE</Link></li>
+                <Link to =''><li>LOGIN</li></Link>
+                <Link to ='/'><li>LOGOUT</li></Link>
 
             </div>
     </div>

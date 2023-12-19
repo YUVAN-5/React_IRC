@@ -7,6 +7,9 @@
     height: 60px;
     font-family:'Chiller';
     color: antiquewhite;
+    position:fixed;
+    width:100%;
+    overflow:hidden;
 }
 .foot{
     font-family:'Chiller';
@@ -34,8 +37,9 @@
     display: flex;
     padding-right: 100px;
     justify-content:space-between;
-    align-items: center;
+    /* align-items: center; */
     color:antiquewhite;
+    margin-left: 15%;
     /* height: max-content; */
 }
 .texts{

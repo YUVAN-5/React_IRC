@@ -6,8 +6,9 @@
 
 .costume-categories {
     display: flex;
-    justify-content: space-around;
+    justify-content:center;
     margin: 20px 0; 
+    /* width: 90%; */
 }
 
 .category {

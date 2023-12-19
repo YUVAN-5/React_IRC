@@ -21,6 +21,7 @@ body {
     text-align: center;
     color: #fff; /* Set the text color */
     z-index: 1; /* Ensure text is above the image */
+    margin-top: 10px;
   }
   
   .text-overlay h1 {

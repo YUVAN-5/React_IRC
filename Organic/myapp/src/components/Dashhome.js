@@ -1,13 +1,38 @@
 
+import React from 'react';
 import { Link } from 'react-router-dom';
 import img1 from '../Assets/img/homeimg.jpg';
+// import petcat from '../Assets/img/homeimg.jpg';
+import img2 from '../Assets/img/Langramangoes.jpg';
+import img3 from '../Assets/img/fruithome.jpg';
+import { Carousel } from 'react-bootstrap';
+import CarouselImage from './Carouselimg';
 function Dashhome()
 {
+
+	const carouselContainerStyle = {
+		paddingTop:'2rem',
+		width: '1000px', 
+		height: '500px', 
+		margin: 'auto', 
+		marginBottom:'6rem'
+		// width:'fit-content%',
+		
+	  };
+	  const arrowStyles = {
+		fontSize: '80px',
+		color: 'transparent',
+		lineHeight: '1.5',
+		borderRadius: '50%',
+		display: 'inline-block',
+		padding: '10px',
+		transition: 'border-radius 0.3s ease'
+	  };
     return(
         <>
         <div id="main-wrapper">
-		<div className="foot"><marquee>Flat 60% Off!!Ends soon...Shop before u Worry!!..</marquee>
-        </div><br/>
+		{/* <div className="foot"><marquee>Flat 60% Off!!Ends soon...Shop before u Worry!!..</marquee>
+        </div> */}
 		<div className="navbar">
         {/* <div className='logo'>
             <img src={img2} style={{height:'80%',width:'10%'}}/>
@@ -28,14 +53,38 @@ function Dashhome()
 		</div>
 	</div> */}
 
-	<div className='image-container'>
+	{/* <div className='image-container'>
             <div class="text-overlay">
             Authentic Organic Fruits & Vegetables</div>
-            <img src={img1} style={{height:'70%',width:'100%'}}/>
-     </div>
+            <img src={img1} style={{height:'90%',width:'80%'}}/>
+     </div> */}
 	
 </div>
+		
+		
 
+  
+    <div style={carouselContainerStyle}>
+      <Carousel interval={3000} nextIcon={<span style={arrowStyles}>&gt;</span>} prevIcon={<span style={arrowStyles}>&lt;</span>}>
+        <Carousel.Item>
+		<div class="text-overlay">
+            Authentic Organic Fruits & Vegetables</div>
+          <CarouselImage src={img1} alt="First Image" />
+        </Carousel.Item>
+        <Carousel.Item>
+		<div class="text-overlay">
+            Langramangoes-Unbeaten Taste</div>
+          <CarouselImage src={img2} alt="Second Image" />
+        </Carousel.Item>
+        <Carousel.Item>
+		<div class="text-overlay">
+            Purity Promised!</div>
+          <CarouselImage src={img3} alt="Third Image" />
+        </Carousel.Item>
+      </Carousel>
+    </div>
+
+		
 {/* <!-- Navigation-Element --> */}
 <nav>
 	<ul>

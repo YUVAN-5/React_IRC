@@ -9,10 +9,10 @@ body{
 }
  
 .form-box{ 
-    width:90%;
+    width:100%;
     max-width:350px;
     position: absolute;
-    top: 58%;
+    top: 32%;
     left:50%;
     transform:translate(-50%,-50%);
     background: #fff;

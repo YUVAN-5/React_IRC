@@ -5,24 +5,30 @@
     background: rgb(9, 10, 10);
     text-decoration:none ;
     height: 60px;
-    font-family:'Chiller';
+    /* font-family:'Chiller'; */
     color: antiquewhite;
     position:fixed;
     width:100%;
     overflow:hidden;
+    margin-top: -.5rem;
 }
 .foot{
-    font-family:'Chiller';
-   font-weight: 1000;
-   font-size: 25px;
-   align-items: center;
-   height: 30px;
-
+    font-family:'Courier New', Courier, monospace;
+    font-weight: 1000;
+    font-size: 25px;
+    align-items: center;
+    height: 40px;
+    margin-top: -2.4rem;
+    position: fixed;
+    width: 100%;
+    overflow:hidden;
+    background-color: antiquewhite;
+    
+    
 }
 .coll{
-    font-family: 'Chiller';
     font-weight: 800;
-   font-size: larger;
+    font-size: larger;
 }
 .logo{
     display: flex;
@@ -34,6 +40,7 @@
 
 .logoname
 {
+    font-family: 'Chiller';
     display: flex;
     padding-right: 100px;
     justify-content:space-between;
@@ -50,11 +57,14 @@
     list-style: none;
     text-decoration:none ;
     gap: 3rem;
-
+    font-family:'Courier New', Courier, monospace;
+    margin-right: 3%;
+    
 }
 .texts li{
     list-style: none;
-    font-size: x-large;
+    font-size:130%;
+    /* font-family:'monospace'; */
 }
 .texts li::after{
     content:'';

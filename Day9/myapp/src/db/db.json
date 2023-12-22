@@ -1,0 +1,15 @@
+{
+  "users": [
+    {
+      "username": "bujji",
+      "password": "mumbai",
+      "id": 3
+    }
+  ],
+  "products": [
+    {
+      "pid": 1,
+      "pname": "pistah"
+    }
+  ]
+}

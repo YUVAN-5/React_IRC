@@ -27,7 +27,7 @@ const MyCarousel = () => {
 
   return (
     <div style={carouselContainerStyle}>
-      <Carousel interval={3000} nextIcon={<span style={arrowStyles}>&gt;</span>} prevIcon={<span style={arrowStyles}>&lt;</span>}>
+      <Carousel interval={1000} nextIcon={<span style={arrowStyles}>&gt;</span>} prevIcon={<span style={arrowStyles}>&lt;</span>}>
         <Carousel.Item>
           <CarouselImage src={petcat} alt="First Image" />
         </Carousel.Item>

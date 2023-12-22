@@ -2,11 +2,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import img1 from '../Assets/img/homeimg.jpg';
-// import petcat from '../Assets/img/homeimg.jpg';
 import img2 from '../Assets/img/Langramangoes.jpg';
 import img3 from '../Assets/img/fruithome.jpg';
 import { Carousel } from 'react-bootstrap';
 import CarouselImage from './Carouselimg';
+
+import Scroll from '../components/Scroll'
+import Footer from '../components/Footer'
 function Dashhome()
 {
 
@@ -15,8 +17,9 @@ function Dashhome()
 		width: '1000px', 
 		height: '500px', 
 		margin: 'auto', 
-		marginBottom:'6rem'
+		marginBottom:'6rem',
 		// width:'fit-content%',
+		zIndex:-1
 		
 	  };
 	  const arrowStyles = {
@@ -25,14 +28,14 @@ function Dashhome()
 		lineHeight: '1.5',
 		borderRadius: '50%',
 		display: 'inline-block',
-		padding: '10px',
-		transition: 'border-radius 0.3s ease'
+		// padding: '10px',
+		transition: 'border-radius 0.3s ease',
 	  };
     return(
         <>
         <div id="main-wrapper">
-		{/* <div className="foot"><marquee>Flat 60% Off!!Ends soon...Shop before u Worry!!..</marquee>
-        </div> */}
+		<div className="foot"><marquee>Flat 60% Off!!Ends soon...Shop before u Worry!!..</marquee>
+        </div>
 		<div className="navbar">
         {/* <div className='logo'>
             <img src={img2} style={{height:'80%',width:'10%'}}/>
@@ -42,8 +45,8 @@ function Dashhome()
             <div className='texts'>
                <li>HOME</li>
                 <li>CART</li>
-                <Link to =''><li>LOGIN</li></Link>
-                <Link to ='/'><li>LOGOUT</li></Link>
+                <li><Link to ='/login'>LOGIN</Link></li>
+                {/* <Link to ='/register'><li>LOGOUT</li></Link> */}
 
             </div>
     </div>
@@ -89,12 +92,20 @@ function Dashhome()
 <nav>
 	<ul>
 		<li><a href="#0">Home</a></li>
-		<li><a href="#0">About</a></li>
+		<li><a href="#0">Our Story</a></li>
 		<li>
-			<a href="#0">Clients</a>
+			<a href="#0">shop by Category</a>
 			<ul>
 				<li>
-					<a href="#0">Burger King</a>
+					<Link to='/veggies'>Veggies</Link>
+					{/* <ul>
+						<li><a href="#0">Project 1</a></li>
+						<li><a href="#0">Project 2</a></li>
+						<li><a href="#0">Project 3</a></li>
+					</ul> */}
+				</li>
+				<li>
+					<a href="#0">Fruits</a>
 					<ul>
 						<li><a href="#0">Project 1</a></li>
 						<li><a href="#0">Project 2</a></li>
@@ -102,15 +113,7 @@ function Dashhome()
 					</ul>
 				</li>
 				<li>
-					<a href="#0">Southwest Airlines</a>
-					<ul>
-						<li><a href="#0">Project 1</a></li>
-						<li><a href="#0">Project 2</a></li>
-						<li><a href="#0">Project 3</a></li>
-					</ul>
-				</li>
-				<li>
-					<a href="#0">Levi Strauss</a>
+					<a href="#0">Greens</a>
 					<ul>
 						<li><a href="#0">Project 1</a></li>
 						<li><a href="#0">Project 2</a></li>
@@ -119,38 +122,42 @@ function Dashhome()
 				</li>
 			</ul>
 		</li>
+		<li><a href="#0">My orders</a></li>
 		<li>
-			<a href="#0">Services</a>
+			<a href="#0">Help</a>
 			<ul>
 				<li>
-					<a href="#0">Print Design</a>
-					<ul>
+					<a href="#0">Your Account</a>
+					{/* <ul>
 						<li><a href="#0">Subservice 1</a></li>
 						<li><a href="#0">Subservice 2</a></li>
 						<li><a href="#0">Subservice 3</a></li>
-					</ul>
+					</ul> */}
 				</li>
 				<li>
-					<a href="#0">Web Design</a>
-					<ul>
+					<a href="#0">Customer service</a>
+					{/* <ul>
 						<li><a href="#0">Subservice 1</a></li>
 						<li><a href="#0">Subservice 2</a></li>
 						<li><a href="#0">Subservice 3</a></li>
-					</ul>
+					</ul> */}
 				</li>
 				<li>
-					<a href="#0">Mobile App Development</a>
-					<ul>
+					<a href="#0">Settings</a>
+					{/* <ul>
 						<li><a href="#0">Subservice 1</a></li>
 						<li><a href="#0">Subservice 2</a></li>
 						<li><a href="#0">Subservice 3</a></li>
-					</ul>
+					</ul> */}
 				</li>
 			</ul>
 		</li>
-		<li><a href="#0">Contact</a></li>
+		<li><Link to='/login'>Logout</Link></li>
+		
 	</ul>
 </nav>
+<Scroll/>
+<Footer/>
         </>
     )
 }

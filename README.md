@@ -1,12 +1,16 @@
 # cc2 Project review
+
 # Home page
 <img src="https://github.com/YUVAN-5/React_IRC/blob/main/cc2/Home%20page.png"/>
+
 # sidepanel using hover
 <img src="https://github.com/YUVAN-5/React_IRC/blob/main/cc2/Sidepanel%20using%20hover.png"/>
+
 # Products
 <img src="https://github.com/YUVAN-5/React_IRC/blob/main/cc2/products.png"/>
 # fruits and veggies
 <img src="https://github.com/YUVAN-5/React_IRC/blob/main/cc2/fruits%20and%20veggies.png"/>
+
 # Footer
 <img src="https://github.com/YUVAN-5/React_IRC/blob/main/cc2/Footer.png"/>
 # Sign in 
